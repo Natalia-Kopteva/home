@@ -1,53 +1,127 @@
 <html>
 <head><title>Natalia Kopteva's homepage</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<! for arrow button>
+
+
     <style>
       body {
         margin: 0;
         background-color: white;
       }
-      .navbar {
-        overflow: hidden;
-        background-color: #660033;
-        position: fixed;
-        top: 0;
+	  
+	.navbar {
+		overflow: hidden;
+		background-color: #660033;
+        <!fixed nav starts here>
+		<!position: fixed;>
+        <!top: 0;>
         width: 100%;
-		height: 54px; <! NK included to preent overlap - effectively limit to one line>
-      }
-      .navbar a {
-        float: left;
-        display: block;
-        color: white; <! navbar font colour #eeeeee;>
-        text-align: center;
-        padding: 15px 18px;
-        text-decoration: none;
-        font-size: 20px;
-      }
-      .navbar a:hover {
-        color: #ffffff;
-      }
-      .container {
-        padding: 18px;
-        margin-top: 35px;
-        <!height: 2000px;> <! commented by NK>
-      }
+		height: 54px; <! NK included to preent overlap - effectively limit to one line>		
+	}
+	.navbar a {
+		float: left;
+		font-size: 20px;
+		color: white;
+		text-align: center;
+		padding: 15px 18px;
+		text-decoration: none;
+		<!font-weight: bold; <!NK>
+	}
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+	.dropdown .dropbtn {
+	  font-size: 20px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 15px 18px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+	  background-color: #732640; <!NK color of clicked button>
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f3f3f3; <!NK color of dropdown menu unclicked>
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.dropdown-content a {
+	  float: none;
+	  color: #7070c2; <!#6666cc; <!#3939ac;>
+	  padding: 10px 14px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	  font-size: 18px;
+	  <!font-weight: medium; <!bold;>
+	}
+	.dropdown-content a:hover {
+	  background-color: #e6e6e6;
+	}
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+	
+     .container {
+       padding: 18px;
+       <!margin-top: 35px;>
+       <!height: 2000px;> <! commented by NK>
+     }	
+	  
     </style>
 
 </head>
+<body text=black  bgcolor=white link="6666CC" alink="6666CC" vlink="6666CC" >
 
-<body>
-
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="#quizzes">Publications</a>
-      <a href="#snippets">Presentations</a>
-	  <a href="https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics/inaf" target="_blank">INAF</a>
-      <a href="#tools">Conference Organisation</a>      
-	  <a href="#stringfunctions">Teaching</a>
+	<div style="top: 0; position: -webkit-sticky; position: sticky">
+    <nav class="navbar">		
+		<div class="dropdown">
+			<button class="dropbtn">
+			  <i class="fa fa-bars"></i>
+			</button>	
+			<div class="dropdown-content">
+				<a href="#quizzes">Publications</a>
+				<a href="#snippets">Presentations</a>
+				<a href="#tools">Conference Organisation</a>
+				<a href="https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics/inaf" target="_blank">INAF</a>				
+				<a href="#tools">Teaching</a>
+			</div>	
+		</div> 
+		 <a href="index.html">Home</a>
+		 <a href="#quizzes">Publications</a>
+		 <a href="#snippets">Presentations</a>
+		 <a href="#tools">Conference Organisation</a> 		 
+		 <a href="https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics/inaf" target="_blank">INAF</a>     
+		<div class="dropdown">
+			<button class="dropbtn">Teaching 
+			  <i class="fa fa-caret-down"></i>
+			</button>	
+			<div class="dropdown-content">
+				<a href="#quizzes">About</a>
+				<a href="#snippets">MA4002</a>
+				<a href="#tools">MS4008</a>
+			</div>	
+		</div>		 
+	  
+	  
     </nav>
+	</div>
 	
-    <div class="container">
-
+    <div class="container"> 
+	
 <h1><strong>Natalia Kopteva's homepage</strong></h1>
 
 <h3><img alt="Natalia Kopteva" src="NK_27dec21_.jpg" style="float:left; height:250px; margin-left:24px; margin-right:24px" /><strong>Qualifications</strong></h3>
@@ -120,7 +194,9 @@ Limerick, V94 T9PX, Ireland&nbsp;<br />
 
 </div>
 
-</body>
 
+</body>
 </html>
+
+<!------------------------>
 
