@@ -1,176 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head><title>Natalia Kopteva's homepage</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<! for arrow button>
+
+<link rel="stylesheet" href="NKstyle.css">
 
 
     <style>
-      body {
-        margin: 0;
-        background-color: white;
-		<!--max-width: 980px;-->
-      }
-	  
-	.navbar {
-		overflow: hidden;
-		background-color: #660033;
-        <!--fixed nav starts here-->
-		<!--position: fixed;-->
-        <!top: 0;>
-        width: 100%;
-		height: 54px;  <--! NK included to preent overlap - effectively limit to one line-->		
-	}
-	.navbar a {
-		float: left;
-		font-size: 20px;
-		color: white;
-		text-align: center;
-		padding: 15px 18px;
-		text-decoration: none;
-		<--!font-weight: bold; <!NK-->
-	}
-	
-/*---*/	
-	.dropdown {
-	  float: left;
-	  overflow: hidden;
-	}
-	.dropdown .dropbtn {
-	  font-size: 20px;  
-	  border: none;
-	  outline: none;
-	  color: white;
-	  padding: 15px 18px;
-	  background-color: inherit;
-	  font-family: inherit;
-	  margin: 0;
-	}
 
-	.navbar a:hover, .dropdown:hover .dropbtn {
-	  background-color: #732640; <!NK color of clicked button>
-	}
-
-	.dropdown-content {
-	  display: none;
-	  position: absolute;
-	  background-color: #f3f3f3; <!NK color of dropdown menu unclicked>
-	  min-width: 160px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	}
-	.dropdown-content a {
-	  float: none;
-	  color: #7070c2; <!#6666cc; <!#3939ac;>
-	  padding: 1px 1px;
-	  text-decoration: none;
-      box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
-	  display: block;
-	  text-align: left;
-	  font-size: 18px;
-	  max-width: 120px;
-	  font-weight: medium;
-	  <!font-weight: medium; <!bold;>
-	}
-	.dropdown-content a:hover {
-	  background-color: #e6e6e6;
-	}
-
-	.dropdown:hover .dropdown-content {
-	  display: block;
-	}
-/*---*/
-
-		/*---*/	
-			.dropdownN {
-			  float: left;
-			  overflow: hidden;
-			}
-			.dropdownN .dropbtn {
-			  font-size: 20px;  
-			  border: none;
-			  outline: none;
-			  color: white;
-			  padding: 15px 18px;
-			  background-color: inherit;
-			  font-family: inherit;
-			  margin: 0;
-			}
-
-			 .dropdownN:hover .dropbtn {
-			  background-color: #732640; <!NK color of clicked button>
-			}
-
-			.dropdownN-content {
-			  display: none;
-			  position: absolute;
-			  background-color: 	#766284; <!#675775;><!#67527a;> <!#655c8a;> <!NK color of dropdown menu unclicked>
-			  min-width: 160px;
-			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			  z-index: 1;
-			}
-			.dropdownN-content a {
-			  float: none;
-			  color: white; <!#7070c2;> <!#6666cc; <!#3939ac;>
-			  padding: 1px 1px;
-			  text-decoration: none;
-			  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
-			  display: block;
-			  text-align: left;
-			  font-size: 18px;
-			  max-width: 120px;
-			  font-weight: medium;
-			  <!font-weight: medium; <!bold;>
-			}
-			.dropdownN-content a:hover {
-			  background-color:  #675775 ; <!clicked bgr>
-			}
-
-			.dropdownN:hover .dropdownN-content {
-			  display: block;
-			}
-		/*---*/
-
-     .container {
-       padding: 18px;
-	   max-width: 980px; <!1280px; 1920px>
-       <!margin-top: 35px;>
-       <!height: 2000px;> <! commented by NK>
-     }	
-	  
     </style>
 
 </head>
 <body text=black  bgcolor=white link="6666CC" alink="6666CC" vlink="6666CC" >
 
-	<div style="top: 0; position: -webkit-sticky; position: sticky">
+	<div style="top: 0; position: -webkit-sticky; position: sticky"> <!--to enable dropdown to show from fixed navbar-->
     <nav class="navbar">		
 		<div class="dropdownN">
 			<button class="dropbtn">
 			  <i class="fa fa-bars"></i>
 			</button>	
 			<div class="dropdownN-content">
-				<a href="#quizzes">Publications</a>
-				<a href="#snippets">Presentations</a>
-				<a href="#editorial">Editorial</a>				
+				<a href="pubs.html">Publications</a>
+				<a href="presnts.html">Presentations</a>
+				<a href="editorial.html">Editorial</a>				
 				<a href="https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics/inaf" target="_blank">INAF</a>				
-				<a href="#tools">Conference Organisation</a>
-				<a href="#tools">Teaching</a>
+				<a href="orgn.html">Conference Organisation</a>
+				<a href="teach.html">Teaching</a>
 			</div>	
 		</div> 
 		<a href="index.html">Home</a>
-		<a href="#quizzes">Publications</a>
-		<a href="#snippets">Presentations</a>	
-		<a href="#editorial">Editorial</a>		
+		<a href="pubs.html">Publications</a>
+		<a href="presnts.html">Presentations</a>	
+		<a href="editorial.html">Editorial</a>		
 		<a href="https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics/inaf" target="_blank">INAF</a>     
 		<div class="dropdown">
 			<button class="dropbtn">Service 
 			  <i class="fa fa-caret-down"></i>
 			</button>	
 			<div class="dropdown-content">
-				<a href="#tools">Conference Organisation</a> 
-				<a href="#snippets">RI Officer</a>
-				<a href="#tools">EMS EthComm</a>
+				<a href="orgn.html">Conference Organisation</a> 
+				<a href="https://www.ul.ie/research/content/researchintegrity" target="_blank">RI Officer</a>				
+				<a href="https://euromathsoc.org/committee-ethics" target="_blank">EMS EthComm</a>
 			</div>	
 		</div>							
 		<div class="dropdown">
@@ -178,33 +49,39 @@
 			  <i class="fa fa-caret-down"></i>
 			</button>	
 			<div class="dropdown-content">
-				<a href="#quizzes">About</a>
-				<a href="#snippets">MA4002</a>
-				<a href="#tools">MS4008</a>
+				<a href="teach.html">About</a>
+				<a href="MA4002.html">MA4002</a>
+				<a href="#editorial">MS4008</a>
 			</div>	
-		</div>		 
-	  
-	  
+		</div>		 	  	  
     </nav>
 	</div>
 	
-    <div class="container"> 
+<div class="container"><!--controls max width + padding--> 
 	
 <h1><strong>Natalia Kopteva's homepage</strong></h1>
 
 <h3><img alt="Natalia Kopteva" src="NK_27dec21_.jpg" style="float:left; height:250px; margin-left:24px; margin-right:24px" /><strong>Qualifications</strong></h3>
 
-<p>M.Sc. (Diploma with Excellence), Moscow State University (1993).<br />
+<p>
+M.Sc. (Diploma with Excellence), Moscow State University (1993).<br />
 Ph.D. (Mathematics), Moscow State University (1997).<br />
-&nbsp;</p>
+</p>
 
 <h3><strong>Research Interests</strong></h3>
 
-<p>Numerical Analysis for Partial Differential Equations: a posteriori error estimation, finite element and finite difference methods, singularly perturbed differential equations, semilinear reaction-diffusion, convection-dominated convection-diffusion problems, time-fractional parabolic equations (subdiffusion equations), layer-adapted anisotropic meshes.<br />
-&nbsp;</p>
+<p>
+Numerical Analysis for Partial Differential Equations: a posteriori error estimation, finite element and finite difference methods, singularly perturbed differential equations, semilinear reaction-diffusion, convection-dominated convection-diffusion problems, time-fractional parabolic equations (subdiffusion equations), layer-adapted anisotropic meshes.<br />
+</p>
 
-<p>See also my profiles at <a href="http://scholar.google.com/citations?user=aT5v8acAAAAJ&amp;hl=en" style="color: black;" target="_blank"><u>Google Scholar</u></a> + <a href="https://www.researchgate.net/profile/Natalia_Kopteva/contributions" style="color: black;" target="_blank"><u>ResearchGate</u></a> + <a href="https://arxiv.org/a/kopteva_n_1.html" style="color: black;" target="_blank"><u>arXiv</u></a>.<br />
-&nbsp;</p>
+<p>
+See also my profiles at 
+<a href="http://scholar.google.com/citations?user=aT5v8acAAAAJ&amp;hl=en" style="color: black;" target="_blank"><u>Google Scholar</u></a> 
++ <a href="https://www.researchgate.net/profile/Natalia_Kopteva/contributions" style="color: black;" target="_blank"><u>ResearchGate</u></a> 
++ <a href="https://arxiv.org/a/kopteva_n_1.html" style="color: black;" target="_blank"><u>arXiv</u></a>
++ <a href="https://orcid.org/0000-0001-7477-6926" style="color: black;" target="_blank"><u></u>ORCID</a> (identifier 0000-0001-7477-6926).
+<br />
+</p>
 
 
 <h3><strong>I am ASSOCIATED with</strong></h3>
@@ -212,28 +89,27 @@ Ph.D. (Mathematics), Moscow State University (1997).<br />
 <p><a href="http://ulsites.ul.ie/macsi/" style="color: black;" target="_blank"><u>MACSI</u> </a> (Mathematics Applications Consortium for Science and Industry)<br />
 <a href="http://www.data-science.ie/" style="color: black;" target="_blank"><u>SFI Centre for Research Training in Foundations of Data Science</u></a> (University of Limerick, University College Dublin, and Maynooth University)
 <br />
-&nbsp;</p>
+</p>
 
-
-<h3><strong>News</strong></h3>
-
+<a id="editorial"></a><!--may be inside any element div, main,... -->
+<h3 ><strong>News</strong></h3>
 <p><strong><a href="https://staff.ul.ie/natalia/inaf" style="color: rgb(102, 102, 204);" target="_blank">Irish Numerical Analysis Forum</a></strong> which will include fortnightly seminars in all areas of numerical analysis starting in January 2021.
 <br />
-&nbsp;</p>
+</p>
 
-<a id="editorial">
+
 <h3><strong>Contact</strong></h3>
 
 <div>Department of Mathematics and Statistics<br />
 University of Limerick<br />
-Limerick, V94 T9PX, Ireland&nbsp;<br />
+Limerick, V94 T9PX, Ireland<br />
 <br />
 </div>
 
-<div style="max-width: 100%; overflow: auto;">
+
 <table   cellspacing="0" cellpadding="0" font-size: 100%; font-family: inherit;>  
-	<tr><td   valign="top"> <font color="996666"><i><b>Phone:</b></i></font></td> 
-		<td> + 353 - 61 - 202196 </td> 
+	<tr><td  style="min-width: 65px" valign="top"> <font color="996666"><i><b>Phone:</b></i></font></td> 
+		<td style="min-width: 130px"> + 353 - 61 - 202196 </td> 
 	</tr> 
 	<tr><td valign="top"> <font color="996666"><i><b>Fax:</b></i></font></td> 
 		<td> + 353 - 61 - 334927 </td> 
@@ -241,42 +117,15 @@ Limerick, V94 T9PX, Ireland&nbsp;<br />
 	<tr><td > <font color="996666"><i><b>Email:</b></i></font> </td>
 		<td > <a href="mailto:natalia.kopteva@ul.ie" style="color: black"> Natalia.Kopteva@ul.ie</a> </td> 
 	</tr> 
-	<tr><td width="55" valign="top"> <font color="996666"><i><b>Room:</b></i></font></td> 
+	<tr><td valign="top"> <font color="996666"><i><b>Room:</b></i></font></td> 
 		<td> B2037 </td> 
 	</tr> 
 </table> 
 </br>
-</div>
 
-<div>
-<table cellpadding="0" cellspacing="0" style="border:medium hidden">
-	<tbody>
-		<tr>
-			<td style="border:medium hidden">Phone:</td>
-			<td><a href="tel:+35361202196" style="color: black"><u>+353-61-202196</u></a></td>
-		</tr>
-		<tr>
-			<td style="border:medium hidden">Fax:</td>
-			<td style="border:medium hidden"><a href="tel:+35361204927" style="color: black"><u>+353-61-204927</u></a></td>
-		</tr>
-		<tr>
-			<td style="border:medium hidden">Email:</td>
-			<td style="border:medium hidden"><a href="mailto:natalia.kopteva@ul.ie" style="color: black"><u>Natalia.Kopteva@ul.ie</u></a></td>
-		</tr>
-		<tr>
-			<td style="border:medium hidden">Room:</td>
-			<td style="border:medium hidden">B2037</td>
-		</tr>
-	</tbody>
-</table>
 
-</div>
 
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-</div>
+</div><!--end of container-->
 
 
 </body>
