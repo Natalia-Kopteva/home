@@ -20,6 +20,10 @@
 		/* margin-bottom: 0px; */
 		/* margin-top: 35px; */
 	  }	  
+  	  a {
+		color: #6666CC; /* #0066FF;  1111CC */
+		/* font-weight: bold; */
+	  }	
 	  
      .container {
 	   margin: auto; /* gives central alignment */
