@@ -3,10 +3,23 @@
         background-color: white;
 		/* margin: auto;  gives central alignment */
 		/* max-width: 980px; */
-      }
+      }	  
 	  li {
 		margin-bottom: 15px;
-	  }	
+	  }
+	  h1 {
+		color: green; 
+	  }
+	  h2 {
+		color: #FF8000; /* #FF4400; */
+		font-weight: bold;
+	  }		 
+	  h3 {
+		color:  #FF8000; /* maroon; #FF4400; */
+		font-weight: bold;
+		/* margin-bottom: 0px; */
+		/* margin-top: 35px; */
+	  }	  
 	  
      .container {
 	   margin: auto; /* gives central alignment */
