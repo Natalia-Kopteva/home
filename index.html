@@ -27,9 +27,10 @@
 	  }
 	  
 	  .grid-container {
-      display: grid;
-      grid-template-columns: min-content minmax(0, 70%) ;
+      display: inline-grid;
+      grid-template-columns: max-content max-content ; <!--minmax (0, 1fr)  minmax (0, 50%)-->
 	  gap: 2px 0px;
+	  max-width: 100%
       }
 	  
     </style>
@@ -156,8 +157,8 @@ Limerick, V94 T9PX, Ireland<br>
 
 
 <div class="grid-container">
-    <div style="display: inline-block;"><span style="color: maroon;"><i>Phone:&nbsp;&nbsp;&nbsp;&nbsp;</i></span></div>
-    <div>+353-61-202196</div>
+    <div><span style="color: maroon;"><i>Phone:&nbsp;&nbsp;&nbsp;&nbsp;</i></span></div>
+    <div style="display: inline-block;">+353-61-202196</div>
     <div style="display: inline-block;"><span style="color: maroon;"><i>Fax:</i></span></div>
     <div>+353-61-334927</div>
     <div style="display: inline-block;"><span style="color: maroon;"><i>Email:</i></span></div>
@@ -165,6 +166,32 @@ Limerick, V94 T9PX, Ireland<br>
     <div><span style="color: maroon;"><i>Room:</i></span></div>
     <div>B2037</div>
 </div>
+
+
+<!--div style="overflow-x: auto; width: 100%;"-->
+<!--div class="table-responsive"; background-color: #f2f2f2; width: min(max(30%, 7cm), 200%); width: max(0%, min(700px, 100%)); **min-width: max(30%, 7cm); max-width: 200%;* min-width: max(30%, 7cm); max-width: 100%; *** -->
+<div style="display: block">
+<table  style="width: max(30%, min(300px, 100%));  vertical-align: top; padding: 0px; border-spacing: 0px; ">  
+	<tr>
+	    <td> <span style="color: maroon;"><i>Phone:</i></span></td> 
+		<td> + 353 - 61 - 202196 </td> 
+	</tr> 
+	<tr>
+	    <td> <span style="color: maroon;"><i>Fax:</i></span></td> 
+		<td> + 353 - 61 - 334927 </td> 
+	</tr> 
+	<tr>
+	    <td > <span style="color: maroon;"><i>Email:</i></span> </td>
+		<td > <a href="mailto:natalia.kopteva@ul.ie">Natalia.Kopteva@ul.ie</a> </td> 
+	</tr> 
+	<tr>
+	    <td> <span style="color: maroon;"><i>Room:</i></span></td> 
+		<td> B2037 </td> 
+	</tr> 
+	<!-- 84627b  846262 732626 a88aa8 A52A2A "#8B4513"-->
+</table> 
+<!--/div--> 
+<br>
 
 
 <!-- - - - - - - - - - - -->
