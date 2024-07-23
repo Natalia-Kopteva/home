@@ -27,10 +27,9 @@
 	  }
 	  
 	  .grid-container {
-      display: inline-grid;
-      grid-template-columns: max-content max-content ; <!--minmax (0, 1fr)  minmax (0, 50%)-->
-	  gap: 2px 0px;
-	  max-width: 100%
+      display: grid;
+      grid-template-columns:  max-content auto ; <!--minmax (0, 1fr)  -->
+	  gap: 2px 0px;	  
       }
 	  
     </style>
@@ -156,7 +155,8 @@ Limerick, V94 T9PX, Ireland<br>
 </p>
 
 
-<div class="grid-container">
+<!--div class="grid-container"-->
+<div style="display: grid; grid-template-columns:  max-content auto ; gap: 2px 0px;">	 
     <div><span style="color: maroon;"><i>Phone:&nbsp;&nbsp;&nbsp;&nbsp;</i></span></div>
     <div style="display: inline-block;">+353-61-202196</div>
     <div style="display: inline-block;"><span style="color: maroon;"><i>Fax:</i></span></div>
@@ -168,9 +168,11 @@ Limerick, V94 T9PX, Ireland<br>
 </div>
 
 
-<!--div style="overflow-x: auto; width: 100%;"-->
+
+ <br>
+<!--div style="overflow-x: auto; "-->
 <!--div class="table-responsive"; background-color: #f2f2f2; width: min(max(30%, 7cm), 200%); width: max(0%, min(700px, 100%)); **min-width: max(30%, 7cm); max-width: 200%;* min-width: max(30%, 7cm); max-width: 100%; *** -->
-<div style="display: block">
+<div style="display: grid; width: 200%;">
 <table  style="width: max(30%, min(300px, 100%));  vertical-align: top; padding: 0px; border-spacing: 0px; ">  
 	<tr>
 	    <td> <span style="color: maroon;"><i>Phone:</i></span></td> 
