@@ -26,6 +26,20 @@
 		/* margin-left: -20px; */
 	  }
 	  
+	  div.grid-container {
+			display: grid;
+			grid-template-columns:  max-content auto; 
+			gap: 2pt max(8pt, 0%); 			
+			background-color: lightgrey;
+	  }
+	  
+	  @media only screen and (max-width: 600px) and (max-width: 30em){
+			div.grid-container {
+			background-color: lightblue;
+			gap: 2pt max(8pt, 8vw); 
+			}
+      }
+	  
     </style>
 
 </head>
@@ -148,8 +162,9 @@ University of Limerick<br>
 Limerick, V94 T9PX, Ireland<br>
 </p>
 
-<div style="display: grid; grid-template-columns:  max-content 1fr; gap: 2pt max(8pt, 2rem); max-width: 100vw;">	 
-    <div style="color: maroon; font-style: italic; min-width: 6rem;">Phone:</div>
+<div class="grid-container">
+<!-- div style="display: grid; grid-template-columns:  max-content 1fr; gap: 2pt max(8pt, 2rem); max-width: 100vw;"-->	 
+    <div style="color: maroon; font-style: italic;">Phone:</div>
     <div>+353-61-202196</div>
 	<div style="color: maroon; font-style: italic;">Email:</div>
     <div><a href="mailto:natalia.kopteva@ul.ie">Natalia.Kopteva@ul.ie</a></div>
@@ -159,7 +174,7 @@ Limerick, V94 T9PX, Ireland<br>
 
 <br>
 
-<div style="display: grid; grid-template-columns:  max-content max-content; gap: 2pt max(8pt, 3rem); max-width: 100%;">	 
+<div style="display: grid; grid-template-columns:  max-content max-content; gap: 2pt max(8pt, 10vw); max-width: 100%;">	 
     <div><span style="color: maroon;"><i>Phone:</i></span></div>
     <div style="display: inline-block;">+353-61-202196</div>
 	<div style="display: inline-block;"><span style="color: maroon;"><i>Email:</i></span></div>
@@ -170,7 +185,18 @@ Limerick, V94 T9PX, Ireland<br>
 
 <br>
 
-<div style="display: grid; grid-template-columns:  auto 1fr; gap: 2pt max(8pt, 1rem); max-width: 100%;">	 
+<div style="display: grid; grid-template-columns:  auto 1fr; gap: 2pt max(8pt, 12vw); max-width: 100%;">	 
+    <div><span style="color: maroon;"><i>Phone:</i></span></div>
+    <div style="display: inline-block;">+353-61-202196</div>
+    <div style="display: inline-block;"><span style="color: maroon;"><i>Email:</i></span></div>
+    <div><a href="mailto:natalia.kopteva@ul.ie">Natalia.Kopteva@ul.ie</a></div>
+    <div><span style="color: maroon;"><i>Room:</i></span></div>
+    <div>B2037</div>
+</div>
+
+<br>
+
+<div style="display: grid; grid-template-columns:  auto 1fr; gap: 2pt max(8pt, 14vw); max-width: 100%;">	 
     <div><span style="color: maroon;"><i>Phone:</i></span></div>
     <div style="display: inline-block;">+353-61-202196</div>
     <div style="display: inline-block;"><span style="color: maroon;"><i>Email:</i></span></div>
@@ -182,8 +208,8 @@ Limerick, V94 T9PX, Ireland<br>
 <br>
 
 
-<div style="display: grid; grid-template-columns:  max-content  1fr ; gap: 2pt 0rem;">	 
-    <div style="color: maroon; font-style: italic; min-width: 6rem;">Phone:</div>
+<div style="display: grid; grid-template-columns:  max-content  1fr ; gap: 2pt max(8pt, 16vw);">	 
+    <div style="color: maroon; font-style: italic;">Phone:</div>
     <div style="display: inline-block;">+353-61-202196</div>
     <div style="display: inline-block; padding-right: 2rem;"><span style="color: maroon; "><i>Fax:</i></span></div>
     <div>+353-61-334927</div>
