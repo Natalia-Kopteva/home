@@ -100,6 +100,7 @@
 	.dropdown:hover .dropdown-content {
 	  display: block;
 	}	
+	
 /****/
 			.dropdownN {
 			  float: left;
@@ -149,3 +150,34 @@
 			  display: block;
 			}
 /****/	
+
+@media screen and (max-width: 768px)  {
+	.dropdown .dropbtn, .dropdownN .dropbtn {
+		font-size: 18px;
+		padding: 8px 12px;	
+	}		
+	.navbar {
+		height: 36px;
+	}	
+	.navbar a {
+		font-size: 18px;
+		padding: 8px 12px;	
+	}	
+}
+
+@media screen and (max-width: 600px) and (max-width: 30em) {
+	.hidden {
+		display: none;
+	}
+	.dropdown .dropbtn, .dropdownN .dropbtn {
+		font-size: 18px;
+		padding: 8px 12px;	
+	}		
+	.navbar {
+		height: 36px;
+	}	
+	.navbar a {
+		font-size: 18px;
+		padding: 8px 12px;	
+	}	
+}
