@@ -151,33 +151,33 @@
 			}
 /****/	
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 1024px)  {
 	.dropdown .dropbtn, .dropdownN .dropbtn {
 		font-size: 18px;
-		padding: 8px 12px;	
+		padding: 8px 8px;	
 	}		
 	.navbar {
 		height: 36px;
 	}	
 	.navbar a {
 		font-size: 18px;
-		padding: 8px 12px;	
+		padding: 8px 8px;	
 	}	
 }
 
-@media screen and (max-width: 600px) and (max-width: 30em) {
+@media screen and (max-width: 600px)  {
 	.hidden {
 		display: none;
 	}
 	.dropdown .dropbtn, .dropdownN .dropbtn {
 		font-size: 18px;
-		padding: 8px 12px;	
+		padding: 8px 8px;	
 	}		
 	.navbar {
 		height: 36px;
 	}	
 	.navbar a {
 		font-size: 18px;
-		padding: 8px 12px;	
+		padding: 8px 8px;	
 	}	
 }
